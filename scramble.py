@@ -11,11 +11,12 @@ def doIterations(filename, num=10):
         for i in range(0,100):
             text = generateRandomText()
             textFile.write(text+"\n")
-        print("iteration " + j + " complete")
+        print("iteration " + str(j+1) + " complete")
         textFile.close()
 
 if len(sys.argv)==1:
-    print("How to use:\n   python scrable.py 'filename' 'number of itterations to run (int)'")
+    print("How to use:\n   python scramble.py 'filename' 'number of itterations to run (int)'")
+    print("example: python scramble.py password.txt 5")
 
 if len(sys.argv)==2:
     fileName = str(sys.argv[1])

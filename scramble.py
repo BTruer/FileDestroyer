@@ -27,3 +27,7 @@ elif len(sys.argv)==3:
     fileName = str(sys.argv[1])
     num = int(sys.argv[2])
     doIterations(fileName,num)
+
+else:
+    print("How to use:\n   python scramble.py 'filename' 'number of itterations to run (int)'")
+    print("example: python scramble.py password.txt 5")

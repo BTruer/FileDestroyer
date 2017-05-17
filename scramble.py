@@ -16,8 +16,8 @@ def doIterations(filename, num=10):
         textFile.close()
 
 if len(sys.argv)==1:
-    print("How to use:\n   python scramble.py 'filename' 'number of itterations to run (int)'")
-    print("example: python scramble.py password.txt 5")
+    print("How to use:\n   python destroy.py 'filename' 'number of itterations to run (int)'")
+    print("example: python destroy.py password.txt 5")
 
 elif len(sys.argv)==2:
     fileName = str(sys.argv[1])
@@ -29,5 +29,5 @@ elif len(sys.argv)==3:
     doIterations(fileName,num)
 
 else:
-    print("How to use:\n   python scramble.py 'filename' 'number of itterations to run (int)'")
-    print("example: python scramble.py password.txt 5")
+    print("How to use:\n   python destroy.py 'filename' 'number of itterations to run (int)'")
+    print("example: python destroy.py password.txt 5")
